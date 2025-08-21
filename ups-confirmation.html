@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>UPS Order Confirmation</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+    body {
+        font-family: 'Roboto', sans-serif;
+        background-color: #f5f5f5;
+        margin: 0;
+        padding: 0;
+        color: #333;
+    }
+
+    /* HEADER */
+    .header {
+        text-align: center;
+        padding: 40px 20px;
+        background-color: #f5f5f5;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .header img {
+        width: 130px;
+    }
+
+    /* MAIN LAYOUT */
+    .main {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 30px 5%;
+        gap: 20px;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .left, .right {
+        flex: 1 1 300px;
+        padding: 0;
+    }
+
+    h1, h2 {
+        color: #351c15;
+        margin-top: 0;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+
+    h2 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    p {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    .price {
+        font-weight: 700;
+        font-size: 18px;
+        color: #351c15;
+        margin-top: 5px;
+    }
+
+    .tracking-number {
+        font-size: 20px;
+        font-weight: 700;
+        color: #ffb500;
+    }
+
+    /* SHIPPING ADDRESS */
+    .address {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    /* SHIPMENT PROGRESS */
+    .progress {
+        margin-top: 15px;
+    }
+
+    .progress-step {
+        display: flex;
+        align-items: center;
+        margin-bottom: 8px;
+    }
+
+    .circle {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: #ffb500;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 700;
+        margin-right: 8px;
+        font-size: 12px;
+    }
+
+    .step-text {
+        font-size: 16px;
+    }
+
+    .footer {
+        text-align: center;
+        padding: 15px 0;
+        font-size: 14px;
+        color: #666;
+        background-color: #f5f5f5;
+        border-top: 1px solid #ddd;
+    }
+
+    @media (max-width: 700px) {
+        .main {
+            flex-direction: column;
+        }
+    }
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<div class="header">
+    <img src="ups-logo.jpg" alt="UPS Logo">
+</div>
+
+<!-- MAIN CONTENT -->
+<div class="main">
+
+    <!-- LEFT COLUMN -->
+    <div class="left">
+        <h1>Congrats, Margaret!</h1>
+        <p>Your UPS order is on its way. Here are your order details:</p>
+
+        <h2>Order Summary</h2>
+        <p><strong>Order Total:</strong> <span class="price">$205.66</span></p>
+        <p><strong>Tracking Number:</strong> <span class="tracking-number">1Z879E234569128473
+</span></p>
+        <p>Your package will take approximately <strong>3–4 business days</strong> to arrive.</p>
+    </div>
+
+    <!-- RIGHT COLUMN -->
+    <div class="right">
+        <h2>Shipping Address</h2>
+        <p class="address">
+            Chris Perry<br>
+            23315 Willow Wood St<br>
+            Tomball, TX 77375-5483<br>
+            United States
+        </p>
+
+        <h2>Shipment Progress</h2>
+        <div class="progress">
+            <div class="progress-step">
+                <div class="circle">✓</div>
+                <div class="step-text">Order Placed</div>
+            </div>
+            <div class="progress-step">
+                <div class="circle">✓</div>
+                <div class="step-text">Processed</div>
+            </div>
+            <div class="progress-step">
+                <div class="circle">•</div>
+                <div class="step-text">In Transit</div>
+            </div>
+            <div class="progress-step">
+                <div class="circle">•</div>
+                <div class="step-text">Out for Delivery</div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+    &copy; 2025 United Parcel Service of America, Inc. All rights reserved. UPS and the UPS Brand Mark are registered trademarks of United Parcel Service of America, Inc.
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
